@@ -1,0 +1,40 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tab-list-item {
+  padding: 5px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+}
+
+.tab-list-item:hover {
+  color: blueviolet;
+  border-color: blueviolet;
+}
+
+.active-tab,
+.active-tab:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.tab-list-item:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.tab-list-item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+}
